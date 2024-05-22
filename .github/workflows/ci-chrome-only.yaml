@@ -48,8 +48,8 @@ jobs:
           name: cypress-videos
           path: cypress/videos
           if-no-files-found: ignore
-
- test-pt-2-of-2:
+          
+   test-pt-2-of-2:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
