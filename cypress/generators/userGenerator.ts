@@ -20,6 +20,13 @@ export const getRandomUserWithUsername = (username: string): User => {
     }
 }
 
+export const getRandomUserWithFirstName = (firstName: string): User => {
+    return {
+        ...getRandomUser(),
+        firstName: firstName
+    }
+}
+
 export const getRandomUsername = (): string => {
     return faker.internet.userName()
 }
