@@ -22,6 +22,7 @@ describe('Home page isolation tests', () => {
       // expect(row).to.contain.text(`${users[index].firstName} ${users[index].lastName}`)
       cy.wrap(row).should('contain.text', `${users[index].firstName} ${users[index].lastName}`)
     })
+    cy.percySnapshot('Full home page')
   })
 
 })

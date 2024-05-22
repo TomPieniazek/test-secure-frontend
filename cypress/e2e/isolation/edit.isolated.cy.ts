@@ -20,6 +20,7 @@ describe('Edit page isolation tests', () => {
   it('Land on Home page without login', () => {
     // @ts-ignore
     editPage.verifyAutocompletion(userToEdit)
+    cy.percySnapshot('Full edit page')
   })
 
 })
