@@ -4,6 +4,7 @@ import { allureCypress } from "allure-cypress/reporter";
 export default defineConfig({
   projectId: "mxxpuu",
   e2e: {
+    video: true,
     env: {
       isMobile: false,
     },
